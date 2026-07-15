@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background: #faf8f5;
+    color: #2d2a24;
+    line-height: 1.6;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #c0392b;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #c0392b;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #5d4037;
+    margin: 0.75rem 0 0.4rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.5rem 0 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.6rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #c0392b;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0.5rem 0 1.5rem;
+    object-fit: cover;
+}
+
+.description,
+.ingredients,
+.steps {
+    background: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.ingredients ul,
+.steps ol {
+    padding-left: 1.5rem;
+}
+
+.ingredients li,
+.steps li {
+    margin-bottom: 0.3rem;
+}
+
+.steps ol {
+    list-style-type: decimal;
+}
+
+a[href*="index.html"] {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+a[href*="index.html"]:hover {
+    border-bottom-color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .description,
+    .ingredients,
+    .steps {
+        padding: 1rem 1.25rem;
+    }
+}
